@@ -54,3 +54,22 @@ Bardzo dziękuję za wprowadzenie w świat testowania i życzę nam wszystkim mi
  *  Po kliknięciu "Print" oraz "Cancel" - przyciski "Download", "Print", "View Columns", "Filter Table" zamieniają sie na małe kwadraty.
  *  Na stronie wyskakuje błąd - TypeError: t is not a function. (In 't()', 't' is undefined)
  *  Również są kilka warnings
+
+
+# __Task 2__
+
+## __Subtask 1__
+
+[Pisanie przypadków testowych na podstawie User Story](https://docs.google.com/spreadsheets/d/1K0BpjyCrDlRwEy4Y3UMPpbTX0EXiDptrovSyTaW_amo/edit?usp=sharing)
+
+## __Subtask 2__
+
+[Pisanie przypadków testowych na podstawie “własnych doświadczeń](https://docs.google.com/spreadsheets/d/11zNw14mEkMCAy73wBg82ZuQhUKXIJeA6-okRKNxr5s4/edit?usp=sharing)
+
+## __Subtask 3__
+
+[Po co piszemy test case’y?](https://docs.google.com/document/d/1d9LfLmayUYVYhXjxcozOikYD3Z_Lti3mcmSYyo-7u94/edit?usp=sharing)
+
+## __Subtask 4__
+
+[DLA CHĘTNYCH](https://docs.google.com/spreadsheets/d/1nfgb-dNXUMAVb_Z7dTC8ZoZniSc979VS98zy6KcVJIY/edit?usp=sharing)
