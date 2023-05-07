@@ -73,3 +73,15 @@ Bardzo dziękuję za wprowadzenie w świat testowania i życzę nam wszystkim mi
 ## __Subtask 4__
 
 [DLA CHĘTNYCH](https://docs.google.com/spreadsheets/d/1nfgb-dNXUMAVb_Z7dTC8ZoZniSc979VS98zy6KcVJIY/edit?usp=sharing)
+
+# __Task 3__
+
+## __Subtask 1__
+
+## __Subtask 2__
+
+[Testowanie według planów testów i raportowanie błędów](https://docs.google.com/document/d/1q-zlhD4yBqLZ0iVBdM8LefR-EDxp0e6v_tfOopXcNco/edit?usp=sharing)
+
+## __Subtask 3__
+
+[Raport z wykonanych testów](https://docs.google.com/document/d/1xKGGz4qam8UaiAOt2jJDOC43Xs_uPaGR8c7IFgVhQv4/edit?usp=sharing)
