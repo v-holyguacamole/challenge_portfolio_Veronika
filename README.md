@@ -85,3 +85,7 @@ Bardzo dziękuję za wprowadzenie w świat testowania i życzę nam wszystkim mi
 ## __Subtask 3__
 
 [Raport z wykonanych testów](https://docs.google.com/document/d/1xKGGz4qam8UaiAOt2jJDOC43Xs_uPaGR8c7IFgVhQv4/edit?usp=sharing)
+
+## __Subtask 4__
+
+[Sesja testów eksploracyjnych](https://docs.google.com/document/d/14scGO3eyCbJ8J2SUxK07CrR_vBRqenzpYuRX0dfl-LE/edit?usp=sharing)
