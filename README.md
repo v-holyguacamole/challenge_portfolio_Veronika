@@ -89,3 +89,38 @@ Bardzo dziękuję za wprowadzenie w świat testowania i życzę nam wszystkim mi
 ## __Subtask 4__
 
 [Sesja testów eksploracyjnych](https://docs.google.com/document/d/14scGO3eyCbJ8J2SUxK07CrR_vBRqenzpYuRX0dfl-LE/edit?usp=sharing)
+
+# __Task 4__
+
+## __Subtask 1__
+
+## __Subtask 2__
+
+[Testowanie eksploracyjne i raportowanie błędów](https://docs.google.com/spreadsheets/d/1PYDtFMjg6Ub8Mibwe3LkJrf1OvWj5nyiWUHCR6sXk9o/edit?usp=sharing)
+
+## __Subtask 3__
+
+##### _1. Do czego służy ta aplikacja? Jaki jest cel tej aplikacji?_
+
+Aplikacja OLX służy do sprzedaży oraz wymiany różnego typu towarów i usług. Cel aplikacji to odnalezienie ze strony sprzedawcy - kupujących zainteresowanych w usłudze/produkcie oraz kupujące którze potrafią znaleźć różnego rodzaju towary i usługi. 
+
+##### _2. Kto ma być użytkownikiem końcowym aplikacji?_
+
+Osoba sprzedająca i kupująca towar lub usługę. 
+
+##### _3. Czy według Ciebie aplikacja jest user friendly? (Przyjazna dla użytkownika- np. wchodzisz do aplikacji i szybko łapiesz do czego służą przyciski. Poczytaj na ten temat w internecie- co to znaczy, że aplikacja jest przyjazna dla użytkownika)_
+
+Aplikacja jest w miare user friendly. Przy logowaniu znajdują się wszystkie potrzebne przyciski. Użytkownik ma bezproblemowe doświadczenie o aplikacji, można szybko zrozumieć do czego służy każda funkcja. Aplikacja posiada dobrze opracowaną wyszukiwarkę dzięki której można szybko znaleźć potrzebne produkty. Tekst dopasowuje się pod względem rozmiaru do ekranu i tym samym zwiększa dostępność aplikacji dla różnych użytkowników. Aplikacja posiada funkcje powiadomień push oraz szybki dostęp do pomocy technicznej. 
+
+##### _4. Jak byś usprawnił aplikację? Co byś w niej poprawił. Czy masz jakiś pomysł na dodatkową funkcjonalność? (Żeby nie było: nie jest to aplikacja przy której pracuję, takie pytania pojawiają się na rozmowach rekrutacyjnych dlatego dobrze jest to przećwiczyć :D )_
+
+Zaproponowałabym zmienić rozdział do scrollowania produktów. Zamieścić w nim przedziały w których system będzie ładował tak zwaną następną stronę. W obecnej chwili nie ma ograniczeń na skrollowanie towarów przez co w przypadku szybkiego skrollowania zdjęcia towarów ładują się po jakimś czasie oraz jest możliwość wyłączenia się aplikacji.
+
+##### _5. Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej, a natywnej?_
+
+Aplikacje internetowa i natywna zawierają w sobie różne funkcje oraz sposób wytwarzania. 
+ * Aplikacja internetową, to oprogramowanie dostępne z poziomu przeglądarki. Aby z niego korzystać, nie trzeba go pobierać i instalować na komputerze – wystarczy działające połączenie z siecią. 
+
+
+ * Aplikacje natywne napisane są specjalnie dla określonego systemu operacyjnego, mają bezpośredni dostęp do wszystkich funkcji urządzenia i domyślnych składników interfejsu użytkownika. To wpływa na ich wysoką wydajność, szybkość działania oraz dobrze dostosowany User Experience. Aplikacje natywne pomagają wykorzystać możliwości urządzenia, jak np. powiadomienia push, aparat, GPS, czytnik linii papilarnych lub face ID. 
+
