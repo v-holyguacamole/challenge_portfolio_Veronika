@@ -126,6 +126,16 @@ Aplikacje internetowa i natywna zawierają w sobie różne funkcje oraz sposób 
 
 # __Task 5__
 
+## __Subtask 1__
+
+##### Nauczyłam się następnych operatorów: 
+
+ *  IN
+ *  AND, OR, NOT
+ *  BETWEEN
+ *  LIKE
+ *  EXISTS, ALL, ANY, SOME
+
 ## __Subtask 3__
 
 ##### _1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname._
