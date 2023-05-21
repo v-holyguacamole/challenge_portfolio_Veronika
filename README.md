@@ -124,3 +124,91 @@ Aplikacje internetowa i natywna zawierają w sobie różne funkcje oraz sposób 
 
  * Aplikacje natywne napisane są specjalnie dla określonego systemu operacyjnego, mają bezpośredni dostęp do wszystkich funkcji urządzenia i domyślnych składników interfejsu użytkownika. To wpływa na ich wysoką wydajność, szybkość działania oraz dobrze dostosowany User Experience. Aplikacje natywne pomagają wykorzystać możliwości urządzenia, jak np. powiadomienia push, aparat, GPS, czytnik linii papilarnych lub face ID. 
 
+# __Task 5__
+
+## __Subtask 3__
+
+##### _1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname._
+
+ *  Pierwsza opcja:
+ 
+ SELECT * from actors order by surname;
+ 
+  *  Druga opcja:
+
+ SELECT * from actors order by surname ASC;
+
+![Screenshot 2023-05-21 at 18 36 54](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/0b72e963-dd3c-417c-90a8-95fce63efd95)
+
+##### _2. Wyświetl film, który powstał w 2019 roku._
+
+SELECT * FROM movies WHERE year_of_production = 2019;
+
+![Screenshot 2023-05-21 at 18 41 56](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/c3e2a2f3-6805-4557-9f74-aa371d9b4254)
+
+##### _3. Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem._
+
+SELECT * FROM movies WHERE year_of_production BETWEEN 1900 AND 1999;
+
+![Screenshot 2023-05-21 at 18 45 03](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/64a37b13-f912-4143-a950-713c4b5386f9)
+
+##### _4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$_
+
+SELECT title, price FROM movies WHERE price < 7;
+
+![Screenshot 2023-05-21 at 18 52 35](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/d2b24f75-935b-4693-a557-4a461fafdc47)
+
+##### _5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN._
+
+*  Pierwsza opcja:
+
+SELECT * FROM actors WHERE actor_id = 4 AND surname = 'Nicholson' OR actor_id = 7 AND surname = 'Bonham Carter';
+
+![Screenshot 2023-05-21 at 21 36 31](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/460d6d36-5051-4928-bc92-4a4d928e79b6)
+
+*  Druga opcja:
+
+SELECT * FROM actors WHERE actor_id = 4 OR actor_id = 7;
+
+![Screenshot 2023-05-21 at 19 41 46](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/e9de79d1-db91-4c8f-a49b-e0bd9ff05975)
+
+##### _6. Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny._
+
+ *  Pierwsza opcja:
+
+SELECT * FROM customers WHERE customer_id IN (2,4,6);
+
+*  Druga opcja:
+
+SELECT * FROM customers WHERE (customer_id = 2 OR customer_id = 4 OR customer_id = 6);
+
+*  Trzecia opcja:
+
+SELECT * FROM customers WHERE (customer_id = '2' OR customer_id = '4' OR customer_id = '6');
+
+![Screenshot 2023-05-21 at 20 36 34](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/067fd15c-f6bf-4946-a6ae-7a975498e521)
+
+##### _7. Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN._
+
+SELECT * FROM customers WHERE customer_id IN (1,3,5);
+
+![Screenshot 2023-05-21 at 20 39 11](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/67217534-81f8-45f7-9ffb-e358dc92bbd4)
+
+##### _8. Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”._
+
+SELECT * FROM actors WHERE name LIKE "An%";
+
+![Screenshot 2023-05-21 at 19 32 56](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/4baec146-f3f0-49b1-b8c2-4cb2897ea968)
+
+##### _9. Wyświetl dane klienta, który nie ma podanego adresu email._
+
+SELECT * FROM customers WHERE email IS NULL;
+
+![Screenshot 2023-05-21 at 20 23 26](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/6af6077b-48ee-4f07-86c5-c72f4e14e1ad)
+
+##### _10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id._
+
+SELECT * FROM movies WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
+
+![Screenshot 2023-05-21 at 20 29 50](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/9467d364-07a5-45ba-b0c1-670c4d3301e5)
+
