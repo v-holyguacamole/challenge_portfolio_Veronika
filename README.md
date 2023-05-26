@@ -231,9 +231,27 @@ SELECT * FROM movies WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
 
 ##### _11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd 🙈_
 
+UPDATE customers SET surname = 'Miler' WHERE customer_id = 3;
+
+![Screenshot 2023-05-26 at 20 12 28](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/561611b9-eafe-4251-be6e-61220cc71b42)
+
+![Screenshot 2023-05-26 at 20 13 23](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/81fcad95-6689-459c-918b-6eecb64aa94e)
+
 ##### _12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej._
 
+SELECT movies.movie_id, name, email FROM customers JOIN sale ON customers.customer_id=sale.customer_id JOIN movies ON sale.movie_id=movies.movie_id WHERE movies.movie_id=4;
+
+![Screenshot 2023-05-26 at 22 24 56](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/370c2cd8-8d19-4b83-8ca4-64d191c6a062)
+
+
+
 ##### _13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com_
+
+UPDATE customers SET email = 'pati@mail.com' WHERE customer_id = 4;
+
+![Screenshot 2023-05-26 at 21 07 17](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/7683264d-6261-40c1-838e-bc4ce253ffe0)
+
+![Screenshot 2023-05-26 at 21 08 40](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/96cd0b3b-eb04-43b2-961d-c7ec74188979)
 
 
 ##### _14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia)._
