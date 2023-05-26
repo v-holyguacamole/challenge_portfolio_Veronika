@@ -253,5 +253,7 @@ SELECT * FROM movies WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
 
 ## __Subtask 2__
 
-#### Test - punktów
+#### Test - 15 punktów :sunglasses:
+
+![Screenshot 2023-05-26 at 14 51 11](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/eb842db6-18d4-497d-b2b5-2d1959786df5)
 
