@@ -192,10 +192,6 @@ SELECT * FROM customers WHERE customer_id IN (2,4,6);
 
 SELECT * FROM customers WHERE (customer_id = 2 OR customer_id = 4 OR customer_id = 6);
 
-*  Trzecia opcja:
-
-SELECT * FROM customers WHERE (customer_id = '2' OR customer_id = '4' OR customer_id = '6');
-
 ![Screenshot 2023-05-21 at 20 36 34](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/067fd15c-f6bf-4946-a6ae-7a975498e521)
 
 ##### _7. Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN._
@@ -222,7 +218,6 @@ SELECT * FROM movies WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
 
 ![Screenshot 2023-05-21 at 20 29 50](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/9467d364-07a5-45ba-b0c1-670c4d3301e5)
 
-
 # __Task 6__
 
 ## __Subtask 1__
@@ -243,8 +238,6 @@ SELECT movies.movie_id, name, email FROM customers JOIN sale ON customers.custom
 
 ![Screenshot 2023-05-26 at 22 24 56](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/370c2cd8-8d19-4b83-8ca4-64d191c6a062)
 
-
-
 ##### _13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com_
 
 UPDATE customers SET email = 'pati@mail.com' WHERE customer_id = 4;
@@ -253,20 +246,54 @@ UPDATE customers SET email = 'pati@mail.com' WHERE customer_id = 4;
 
 ![Screenshot 2023-05-26 at 21 08 40](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/96cd0b3b-eb04-43b2-961d-c7ec74188979)
 
-
 ##### _14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia)._
+
+SELECT customers.name, customers.surname, movies.title FROM customers INNER JOIN sale ON customers.customer_id=sale.customer_id INNER JOIN movies ON movies.movie_id=sale.movie_id;
+
+![Screenshot 2023-05-27 at 13 01 51](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/8d393ba0-11c8-43d1-951b-8763b2ad7ffc)
 
 ##### _15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag_
 
+ALTER TABLE customers ADD pseudonym int;
+
+![Screenshot 2023-05-27 at 15 43 33](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/3fd31cc4-ccb8-481e-aa91-3654d9a226af)
+
+
 ##### _16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały._
+
+SELECT DISTINCT (movies.title) FROM movies JOIN sale ON movies.movie_id=sale.movie_id;
+
+![Screenshot 2023-05-27 at 13 06 45](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/0c6a3169-0986-480f-991d-b25d96bc51ef)
 
 ##### _17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)_
 
+SELECT actors.name FROM actors UNION SELECT customers.name FROM customers ORDER BY name;
+
+![Screenshot 2023-05-27 at 14 48 47](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/d38a6f7c-9d45-4215-83e3-59b986b04ad0)
+
 ##### _18. Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie)._
+
+UPDATE movies SET price = movies.price + 2.5 WHERE movies.year_of_production > 2000;
+
+![Screenshot 2023-05-27 at 17 20 32](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/13a4dbac-c4e2-41b5-9c8f-397d7675728b)
 
 ##### _19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał_
 
+SELECT actors.name, actors.surname, movies.title FROM actors INNER JOIN cast ON actors.actor_id=cast.actor_id INNER JOIN movies ON cast.movie_id=movies.movie_id WHERE actors.actor_id=4;
+
+![Screenshot 2023-05-27 at 14 04 14](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/2bb25400-17b6-4c4e-8272-505595b48784)
+
+Druga opcja z actor_id:
+
+SELECT actors.actor_id, actors.name, actors.surname, movies.title FROM actors INNER JOIN cast ON actors.actor_id=cast.actor_id INNER JOIN movies ON cast.movie_id=movies.movie_id WHERE actors.actor_id=4;
+
+![Screenshot 2023-05-27 at 14 06 05](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/ec0a3801-e28f-4b95-b625-89123b908be2)
+
 ##### _20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa_
+
+INSERT INTO customers(customers.customer_id, customers.name, customers.surname, customers.email) VALUES (7, 'Honia','Stuczka-Kucharska','honia@mail.com');
+
+![Screenshot 2023-05-27 at 17 07 23](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/fecb66b8-3c8f-474f-b574-c9e2076425c9)
 
 
 ## __Subtask 2__
