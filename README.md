@@ -14,11 +14,9 @@ Bardzo dziękuję za wprowadzenie w świat testowania i życzę nam wszystkim mi
 
 **_Veronika_**
 
-
 ## __Subtask 4__
 
 #### Poniżej zostały wymienione główne uwagi po testu eksploracyjnym
-
 
 ##### _1. Na czym polega aplikacja:_ 
 
@@ -39,9 +37,7 @@ Bardzo dziękuję za wprowadzenie w świat testowania i życzę nam wszystkim mi
  
  *  Aplikacja jest w miarę intuicyjna. Jednak Rozdział "Rozpocznij mecz" jest widoczny dopiero po kilkunastemu kliknięciu i nie jest do końca zrozumiałe dla czego służy ta funkcja. 
  
- 
  ##### _5. Błędy:_
- 
   
  *  Brak możliwości założenia konta dla nowego użytkownika.
  *  Rozdział “Dodaj gracza” w którym wypełniasz formularz ma błędy.
@@ -54,7 +50,6 @@ Bardzo dziękuję za wprowadzenie w świat testowania i życzę nam wszystkim mi
  *  Po kliknięciu "Print" oraz "Cancel" - przyciski "Download", "Print", "View Columns", "Filter Table" zamieniają sie na małe kwadraty.
  *  Na stronie wyskakuje błąd - TypeError: t is not a function. (In 't()', 't' is undefined)
  *  Również są kilka warnings
-
 
 # __Task 2__
 
@@ -120,7 +115,6 @@ Zaproponowałabym zmienić rozdział do scrollowania produktów. Zamieścić w n
 
 Aplikacje internetowa i natywna zawierają w sobie różne funkcje oraz sposób wytwarzania. 
  * Aplikacja internetową, to oprogramowanie dostępne z poziomu przeglądarki. Aby z niego korzystać, nie trzeba go pobierać i instalować na komputerze – wystarczy działające połączenie z siecią. 
-
 
  * Aplikacje natywne napisane są specjalnie dla określonego systemu operacyjnego, mają bezpośredni dostęp do wszystkich funkcji urządzenia i domyślnych składników interfejsu użytkownika. To wpływa na ich wysoką wydajność, szybkość działania oraz dobrze dostosowany User Experience. Aplikacje natywne pomagają wykorzystać możliwości urządzenia, jak np. powiadomienia push, aparat, GPS, czytnik linii papilarnych lub face ID. 
 
@@ -246,10 +240,15 @@ SELECT customers.name, customers.surname, movies.title FROM customers INNER JOIN
 
 ##### _15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag_
 
-ALTER TABLE customers ADD pseudonym int;
+ALTER TABLE customers ADD pseudonym varchar;
 
 ![Screenshot 2023-05-27 at 15 43 33](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/3fd31cc4-ccb8-481e-aa91-3654d9a226af)
 
+UPDATE customers
+SET customers.pseudonym=' *** '
+WHERE customers.customer_id = ***
+
+![Screenshot 2023-05-28 at 14 34 47](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/9d300f6d-ee7b-4900-9cd6-5e7a2325361b)
 
 ##### _16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały._
 
@@ -287,10 +286,14 @@ INSERT INTO customers(customers.customer_id, customers.name, customers.surname, 
 
 ![Screenshot 2023-05-27 at 17 07 23](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/fecb66b8-3c8f-474f-b574-c9e2076425c9)
 
+UPDATE customers
+SET customers.pseudonym='Hoa'
+WHERE customers.customer_id = 7
+
+![Screenshot 2023-05-28 at 14 33 32](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/bb879a25-6aca-4422-8fec-37b5143113d2)
 
 ## __Subtask 2__
 
 #### Test - 15 punktów :sunglasses:
 
 ![Screenshot 2023-05-26 at 14 51 11](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/eb842db6-18d4-497d-b2b5-2d1959786df5)
-
