@@ -306,6 +306,8 @@ WHERE customers.customer_id = 7
 
  *  Druga opcja:
 
+INSERT INTO customers (customers_id, name surname, email, pseudonim) VALUES (7, ‘Honia’, ‘Stuczka-Kucharska’, ‘honia@mail.com’, ‘Hoa’)
+
 ![Screenshot 2023-05-28 at 14 33 32](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/bb879a25-6aca-4422-8fec-37b5143113d2)
 
 ## __Subtask 2__
