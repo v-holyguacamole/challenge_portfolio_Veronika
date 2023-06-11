@@ -294,6 +294,8 @@ SELECT actors.actor_id, actors.name, actors.surname, movies.title FROM actors IN
 
 ##### _20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa_
 
+ *  Pierwsza opcja:
+
 INSERT INTO customers(customers.customer_id, customers.name, customers.surname, customers.email) VALUES (7, 'Honia','Stuczka-Kucharska','honia@mail.com');
 
 ![Screenshot 2023-05-27 at 17 07 23](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/fecb66b8-3c8f-474f-b574-c9e2076425c9)
@@ -301,6 +303,8 @@ INSERT INTO customers(customers.customer_id, customers.name, customers.surname, 
 UPDATE customers
 SET customers.pseudonym='Hoa'
 WHERE customers.customer_id = 7
+
+ *  Druga opcja:
 
 ![Screenshot 2023-05-28 at 14 33 32](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/bb879a25-6aca-4422-8fec-37b5143113d2)
 
