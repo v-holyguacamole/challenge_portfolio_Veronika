@@ -270,11 +270,13 @@ UPDATE movies SET price = movies.price + 2.5 WHERE movies.year_of_production > 2
 
 ##### _19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał_
 
+ *  Pierwsza opcja:
+
 SELECT actors.name, actors.surname, movies.title FROM actors INNER JOIN cast ON actors.actor_id=cast.actor_id INNER JOIN movies ON cast.movie_id=movies.movie_id WHERE actors.actor_id=4;
 
 ![Screenshot 2023-05-27 at 14 04 14](https://github.com/v-holyguacamole/challenge_portfolio_Veronika/assets/131337455/2bb25400-17b6-4c4e-8272-505595b48784)
 
-Druga opcja z actor_id:
+ *  Pierwsza opcja: z actor_id:
 
 SELECT actors.actor_id, actors.name, actors.surname, movies.title FROM actors INNER JOIN cast ON actors.actor_id=cast.actor_id INNER JOIN movies ON cast.movie_id=movies.movie_id WHERE actors.actor_id=4;
 
